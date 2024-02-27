@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="addCourse.css">
+</head>
+<body>
+    <h1>Add Course</h1>
+    <form action="addCourse.php" method="post">
+        <div>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+        </div>
+        <div>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+        </div>
+        <div>
+            <label for="image_url">Image URL:</label><br>
+            <input type="url" id="image_url" name="image_url" required><br>
+        </div>
+        <div>
+            <input type="submit" value="Add Course">
+        </div>
+    </form>
+</body>
+</html>
